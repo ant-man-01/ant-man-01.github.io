@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, IT電腦 數碼 手機 NAS教程分享">
+    <meta name="keywords" content="给Jellyfin添加豆瓣刮削插件解决TheMovieDB无法刮问题, IT電腦 數碼 手機 NAS教程分享">
     <meta name="description" content="這是一個數碼教程分享網站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Ant Man</title>
+    <title>给Jellyfin添加豆瓣刮削插件解决TheMovieDB无法刮问题 | Ant Man</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -249,12 +249,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">给Jellyfin添加豆瓣刮削插件解决TheMovieDB无法刮问题</h1>
                 </div>
             </div>
         </div>
@@ -382,7 +382,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-10-08
+                    2023-10-09
                 </div>
                 
 
@@ -391,7 +391,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    471
                 </div>
                 
 
@@ -408,19 +408,30 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近我在NAS中安装了Jellyfin，但是默认的TheMovieDB刮削插件有些影片的信息总是不正确，有时甚至根本无法刮削。因此，我撰写了这篇教程，向大家介绍如何添加豆瓣的刮削插件来解决这个问题。</p>
+<hr>
+<h1 id="metashark插件"><a href="#metashark插件" class="headerlink" title="metashark插件"></a>metashark插件</h1><p>metashark是一个开源的豆瓣刮削插件，我试过几个类似的插件，发现它最好用，因此向大家推荐。<br>项目地址：<a target="_blank" rel="noopener" href="https://github.com/cxfksword/jellyfin-plugin-metashark">https://github.com/cxfksword/jellyfin-plugin-metashark</a></p>
+<h2 id="插件链接"><a href="#插件链接" class="headerlink" title="插件链接"></a>插件链接</h2><p>只支持最新的<code>jellyfin 10.8.x</code>版本</p>
+<p>添加插件存储库：</p>
+<p>国内加速：<a target="_blank" rel="noopener" href="https://ghproxy.com/https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest_cn.json">https://ghproxy.com/https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest_cn.json</a></p>
+<p>国外访问：<a target="_blank" rel="noopener" href="https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json">https://github.com/cxfksword/jellyfin-plugin-metashark/releases/download/manifest/manifest.json</a></p>
+<h2 id="安装使用方法"><a href="#安装使用方法" class="headerlink" title="安装使用方法"></a>安装使用方法</h2><p>进入Jellyfin打开控制台找到插件</p>
+<p><img src="https://picshack.net/ib/MuyS3DWqnN.png" alt="https://picshack.net/ib/MuyS3DWqnN.png"></p>
+<p><img src="https://picshack.net/ib/rUxq20icLs.png" alt="https://picshack.net/ib/rUxq20icLs.png"></p>
+<p>然后点击存储库，点击+</p>
+<p><img src="https://picshack.net/ib/GNHHBsMGS3.png" alt="https://picshack.net/ib/GNHHBsMGS3.png"></p>
+<p>输入上面的json链接</p>
+<p><img src="https://picshack.net/ib/07swreeFHA.png" alt="https://picshack.net/ib/07swreeFHA.png"></p>
+<p>保存后，去NAS重启Jellyfin ，然后在目录标签页可以看到metashark 插件了，点击进去安装。</p>
+<p><img src="https://picshack.net/ib/KZPM7c5s9P.png" alt="https://picshack.net/ib/KZPM7c5s9P.png"></p>
+<p><img src="https://picshack.net/ib/F4xZaCT8zu.png" alt="https://picshack.net/ib/F4xZaCT8zu.png"></p>
+<p>安装完成后，可以在我的插件页面看到metashark插件已经是active激活状态。</p>
+<p>不设置也可以直接使用，当然可以在设置里把douban的cookie填写进去更好。（点metashark右下角的三个点进行设置）</p>
+<p>弄好之后，进入媒体库勾选“MetaShark” 元数据刮削，不然不会生效，还是只能搜索TheMovieDb。</p>
+<p><img src="https://picshack.net/ib/A8UA3DlfRW.png" alt="https://picshack.net/ib/A8UA3DlfRW.png"></p>
+<p>你有几个媒体库就都要去设置一下。</p>
+<p>点首页标志回到影库，选中你不能正常刮削的影片，点击右下角三个点菜单里面的“识别”，搜索元数据信息就可以自己挑选需要那个元数据就ok了。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>到这，影视库刮削工作就完成了，目前我使用的metashark加Themoviedb补充信息，海报图片和背景图两个我都会使用，哪个封面好看我就换哪个。</p>
 
                 
             </div>
@@ -447,7 +458,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://ant-man-01.github.io/2023/10/08/hello-world/">https://ant-man-01.github.io/2023/10/08/hello-world/</a>
+                    <a href="https://ant-man-01.github.io/2023/10/09/gei-jellyfin-tian-jia-dou-ban-gua-xue-cha-jian-jie-jue-themoviedb-wu-fa-gua-wen-ti/">https://ant-man-01.github.io/2023/10/09/gei-jellyfin-tian-jia-dou-ban-gua-xue-cha-jian-jie-jue-themoviedb-wu-fa-gua-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -657,13 +668,13 @@
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2023/10/08/hello-world/">
+                <a href="/2023/10/09/gei-jellyfin-tian-jia-dou-ban-gua-xue-cha-jian-jie-jue-themoviedb-wu-fa-gua-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="给Jellyfin添加豆瓣刮削插件解决TheMovieDB无法刮问题">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">给Jellyfin添加豆瓣刮削插件解决TheMovieDB无法刮问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -674,7 +685,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-10-09
                             </span>
                         <span class="publish-author">
                             
@@ -692,10 +703,10 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2023/10/08/hello-world/">
+                <a href="/2023/10/08/hello/">
                     <div class="card-image">
                         
                         
@@ -722,7 +733,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -922,7 +932,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73</span>&nbsp;字
+                class="white-color">544</span>&nbsp;字
             
             
             
